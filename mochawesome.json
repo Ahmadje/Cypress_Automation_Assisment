@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-03-25T04:38:08.472Z",
+    "end": "2024-03-25T04:38:48.391Z",
+    "duration": 39919
+  },
+  "results": [
+    {
+      "uuid": "19e0f386-b450-4783-9062-65f7a473d5c2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\product.cy.js",
+      "file": "cypress\\e2e\\product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "757115bc-4e08-4666-9c44-f30060d2798f",
+          "title": "Filter Products by Catagoery",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Filter Products on Women Catagoery",
+              "fullTitle": "Filter Products by Catagoery Verify Filter Products on Women Catagoery",
+              "timedOut": null,
+              "duration": 9581,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.home.getMainCatagoeryBtn().contains(this.testData.mainCatagoery[0]).click();\nthis.home.getSubCatagoeryBtn().contains(this.testData.subCatagoery[0]).click();\nthis.product.getProductTitle().contains(this.testData.subCatagoery[0]);\ncy.verifyProductsCatagoery(this.testData.subCatagoery[0]);",
+              "err": {},
+              "uuid": "82011eb2-9be0-422a-8985-98058d68bd73",
+              "parentUUID": "757115bc-4e08-4666-9c44-f30060d2798f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Filter Products on Men Catagoery",
+              "fullTitle": "Filter Products by Catagoery Verify Filter Products on Men Catagoery",
+              "timedOut": null,
+              "duration": 7285,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.home.getMainCatagoeryBtn().contains(this.testData.mainCatagoery[1]).click();\nthis.home.getSubCatagoeryBtn().contains(this.testData.subCatagoery[1]).click();\nthis.product.getProductTitle().contains(this.testData.subCatagoery[1]);\ncy.verifyProductsCatagoery(this.testData.subCatagoery[1]);",
+              "err": {},
+              "uuid": "1943522d-7de9-4624-bf82-6a46a2c5ede5",
+              "parentUUID": "757115bc-4e08-4666-9c44-f30060d2798f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82011eb2-9be0-422a-8985-98058d68bd73",
+            "1943522d-7de9-4624-bf82-6a46a2c5ede5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16866,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "93c7ded5-8920-452d-929c-8bdb9d620402",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
+          "title": "Login Feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify login with valid data",
+              "fullTitle": "Login Feature Verify login with valid data",
+              "timedOut": null,
+              "duration": 9871,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.login.loginWith(this.testData.validEmail, this.testData.validPassword + '{enter}');\nthis.home.getLogoutBtn().should('have.text', ' Logout').should('be.visible');",
+              "err": {},
+              "uuid": "2b0004e6-3e20-4c52-b9ea-af0ad472d297",
+              "parentUUID": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify login with wrong password",
+              "fullTitle": "Login Feature Verify login with wrong password",
+              "timedOut": null,
+              "duration": 5347,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.login.loginWith(this.testData.validEmail, this.testData.invalidPassword + '{enter}');\nthis.login.getErrorMsg().should('have.text', 'Your email or password is incorrect!');",
+              "err": {},
+              "uuid": "da09a500-7e4b-43f5-9e10-cc8b9b381069",
+              "parentUUID": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify login with wrong email",
+              "fullTitle": "Login Feature Verify login with wrong email",
+              "timedOut": null,
+              "duration": 5276,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.login.loginWith(this.testData.wrongEmail, this.testData.validPassword + '{enter}');\nthis.login.getErrorMsg().should('have.text', 'Your email or password is incorrect!');",
+              "err": {},
+              "uuid": "18a8dfaf-5823-4a17-8d70-b3592275fa90",
+              "parentUUID": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b0004e6-3e20-4c52-b9ea-af0ad472d297",
+            "da09a500-7e4b-43f5-9e10-cc8b9b381069",
+            "18a8dfaf-5823-4a17-8d70-b3592275fa90"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20494,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

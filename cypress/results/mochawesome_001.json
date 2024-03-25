@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-25T04:14:48.287Z",
-    "end": "2024-03-25T04:15:05.838Z",
-    "duration": 17551,
+    "start": "2024-03-25T04:38:31.419Z",
+    "end": "2024-03-25T04:38:48.391Z",
+    "duration": 16972,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0c4deb57-8839-4174-81b7-9b902c653c47",
+      "uuid": "19e0f386-b450-4783-9062-65f7a473d5c2",
       "title": "",
       "fullFile": "cypress\\e2e\\product.cy.js",
       "file": "cypress\\e2e\\product.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "919addec-94cf-469d-bdb3-b6f1fd93c080",
+          "uuid": "757115bc-4e08-4666-9c44-f30060d2798f",
           "title": "Filter Products by Catagoery",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Verify Filter Products on Women Catagoery",
               "fullTitle": "Filter Products by Catagoery Verify Filter Products on Women Catagoery",
               "timedOut": null,
-              "duration": 9095,
+              "duration": 9581,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "this.home.getMainCatagoeryBtn().contains(this.testData.mainCatagoery[0]).click();\nthis.home.getSubCatagoeryBtn().contains(this.testData.subCatagoery[0]).click();\nthis.product.getProductTitle().contains(this.testData.subCatagoery[0]);\ncy.verifyProductsCatagoery(this.testData.subCatagoery[0]);",
               "err": {},
-              "uuid": "59006617-21d5-49c7-b0cb-b13b5c45673c",
-              "parentUUID": "919addec-94cf-469d-bdb3-b6f1fd93c080",
+              "uuid": "82011eb2-9be0-422a-8985-98058d68bd73",
+              "parentUUID": "757115bc-4e08-4666-9c44-f30060d2798f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Verify Filter Products on Men Catagoery",
               "fullTitle": "Filter Products by Catagoery Verify Filter Products on Men Catagoery",
               "timedOut": null,
-              "duration": 8331,
+              "duration": 7285,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "this.home.getMainCatagoeryBtn().contains(this.testData.mainCatagoery[1]).click();\nthis.home.getSubCatagoeryBtn().contains(this.testData.subCatagoery[1]).click();\nthis.product.getProductTitle().contains(this.testData.subCatagoery[1]);\ncy.verifyProductsCatagoery(this.testData.subCatagoery[1]);",
               "err": {},
-              "uuid": "4939c2ef-aad6-43bc-b772-4ea009aa8803",
-              "parentUUID": "919addec-94cf-469d-bdb3-b6f1fd93c080",
+              "uuid": "1943522d-7de9-4624-bf82-6a46a2c5ede5",
+              "parentUUID": "757115bc-4e08-4666-9c44-f30060d2798f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "59006617-21d5-49c7-b0cb-b13b5c45673c",
-            "4939c2ef-aad6-43bc-b772-4ea009aa8803"
+            "82011eb2-9be0-422a-8985-98058d68bd73",
+            "1943522d-7de9-4624-bf82-6a46a2c5ede5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17426,
+          "duration": 16866,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -113,7 +113,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "'cypress/results'",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": true,
         "json": true

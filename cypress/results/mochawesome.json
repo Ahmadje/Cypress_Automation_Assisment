@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-25T04:14:22.904Z",
-    "end": "2024-03-25T04:14:46.246Z",
-    "duration": 23342,
+    "start": "2024-03-25T04:38:08.472Z",
+    "end": "2024-03-25T04:38:29.141Z",
+    "duration": 20669,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d66dd049-4372-4209-9f3d-9789a38a096c",
+      "uuid": "93c7ded5-8920-452d-929c-8bdb9d620402",
       "title": "",
       "fullFile": "cypress\\e2e\\login.cy.js",
       "file": "cypress\\e2e\\login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4587b7d2-6dc4-4ea4-8306-bc95385f6c53",
+          "uuid": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
           "title": "Login Feature",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Verify login with valid data",
               "fullTitle": "Login Feature Verify login with valid data",
               "timedOut": null,
-              "duration": 9367,
+              "duration": 9871,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "this.login.loginWith(this.testData.validEmail, this.testData.validPassword + '{enter}');\nthis.home.getLogoutBtn().should('have.text', ' Logout').should('be.visible');",
               "err": {},
-              "uuid": "784bed5f-d1ef-43e3-beab-869df1995bb1",
-              "parentUUID": "4587b7d2-6dc4-4ea4-8306-bc95385f6c53",
+              "uuid": "2b0004e6-3e20-4c52-b9ea-af0ad472d297",
+              "parentUUID": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Verify login with wrong password",
               "fullTitle": "Login Feature Verify login with wrong password",
               "timedOut": null,
-              "duration": 6447,
+              "duration": 5347,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "this.login.loginWith(this.testData.validEmail, this.testData.invalidPassword + '{enter}');\nthis.login.getErrorMsg().should('have.text', 'Your email or password is incorrect!');",
               "err": {},
-              "uuid": "da747007-d6c6-40c2-bf32-9c47a61d1be7",
-              "parentUUID": "4587b7d2-6dc4-4ea4-8306-bc95385f6c53",
+              "uuid": "da09a500-7e4b-43f5-9e10-cc8b9b381069",
+              "parentUUID": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Verify login with wrong email",
               "fullTitle": "Login Feature Verify login with wrong email",
               "timedOut": null,
-              "duration": 7273,
+              "duration": 5276,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "this.login.loginWith(this.testData.wrongEmail, this.testData.validPassword + '{enter}');\nthis.login.getErrorMsg().should('have.text', 'Your email or password is incorrect!');",
               "err": {},
-              "uuid": "0eb7bc4f-7794-4b76-95ab-ff11ea74463d",
-              "parentUUID": "4587b7d2-6dc4-4ea4-8306-bc95385f6c53",
+              "uuid": "18a8dfaf-5823-4a17-8d70-b3592275fa90",
+              "parentUUID": "561a30c2-db65-4c95-81ef-2e4a66c38cb2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "784bed5f-d1ef-43e3-beab-869df1995bb1",
-            "da747007-d6c6-40c2-bf32-9c47a61d1be7",
-            "0eb7bc4f-7794-4b76-95ab-ff11ea74463d"
+            "2b0004e6-3e20-4c52-b9ea-af0ad472d297",
+            "da09a500-7e4b-43f5-9e10-cc8b9b381069",
+            "18a8dfaf-5823-4a17-8d70-b3592275fa90"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 23087,
+          "duration": 20494,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -132,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "'cypress/results'",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": true,
         "json": true
