@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-25T04:00:38.059Z",
+    "end": "2024-03-25T04:01:05.921Z",
+    "duration": 27862,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74521c65-c6e9-4e32-9791-a184e670fe35",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef1b99f2-8a00-4aff-8e55-4a96a14f57d4",
+          "title": "Login Feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify login with valid data",
+              "fullTitle": "Login Feature Verify login with valid data",
+              "timedOut": null,
+              "duration": 12368,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.login.loginWith(this.testData.validEmail, this.testData.validPassword + '{enter}');\nthis.home.getLogoutBtn().should('have.text', ' Logout').should('be.visible');",
+              "err": {},
+              "uuid": "56fcce66-a641-48f5-8b89-4020a3ad458e",
+              "parentUUID": "ef1b99f2-8a00-4aff-8e55-4a96a14f57d4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify login with wrong password",
+              "fullTitle": "Login Feature Verify login with wrong password",
+              "timedOut": null,
+              "duration": 7642,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.login.loginWith(this.testData.validEmail, this.testData.invalidPassword + '{enter}');\nthis.login.getErrorMsg().should('have.text', 'Your email or password is incorrect!');",
+              "err": {},
+              "uuid": "27c45ef0-6bf4-475e-8c0c-3ce8d6e0f379",
+              "parentUUID": "ef1b99f2-8a00-4aff-8e55-4a96a14f57d4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify login with wrong email",
+              "fullTitle": "Login Feature Verify login with wrong email",
+              "timedOut": null,
+              "duration": 7370,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.login.loginWith(this.testData.wrongEmail, this.testData.validPassword + '{enter}');\nthis.login.getErrorMsg().should('have.text', 'Your email or password is incorrect!');",
+              "err": {},
+              "uuid": "1f870223-deee-4d70-8690-1f181c43485c",
+              "parentUUID": "ef1b99f2-8a00-4aff-8e55-4a96a14f57d4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "56fcce66-a641-48f5-8b89-4020a3ad458e",
+            "27c45ef0-6bf4-475e-8c0c-3ce8d6e0f379",
+            "1f870223-deee-4d70-8690-1f181c43485c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27380,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "'cypress/results'",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

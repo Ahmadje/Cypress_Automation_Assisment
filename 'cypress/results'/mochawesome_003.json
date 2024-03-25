@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-25T04:14:48.287Z",
+    "end": "2024-03-25T04:15:05.838Z",
+    "duration": 17551,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c4deb57-8839-4174-81b7-9b902c653c47",
+      "title": "",
+      "fullFile": "cypress\\e2e\\product.cy.js",
+      "file": "cypress\\e2e\\product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "919addec-94cf-469d-bdb3-b6f1fd93c080",
+          "title": "Filter Products by Catagoery",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Filter Products on Women Catagoery",
+              "fullTitle": "Filter Products by Catagoery Verify Filter Products on Women Catagoery",
+              "timedOut": null,
+              "duration": 9095,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.home.getMainCatagoeryBtn().contains(this.testData.mainCatagoery[0]).click();\nthis.home.getSubCatagoeryBtn().contains(this.testData.subCatagoery[0]).click();\nthis.product.getProductTitle().contains(this.testData.subCatagoery[0]);\ncy.verifyProductsCatagoery(this.testData.subCatagoery[0]);",
+              "err": {},
+              "uuid": "59006617-21d5-49c7-b0cb-b13b5c45673c",
+              "parentUUID": "919addec-94cf-469d-bdb3-b6f1fd93c080",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Filter Products on Men Catagoery",
+              "fullTitle": "Filter Products by Catagoery Verify Filter Products on Men Catagoery",
+              "timedOut": null,
+              "duration": 8331,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.home.getMainCatagoeryBtn().contains(this.testData.mainCatagoery[1]).click();\nthis.home.getSubCatagoeryBtn().contains(this.testData.subCatagoery[1]).click();\nthis.product.getProductTitle().contains(this.testData.subCatagoery[1]);\ncy.verifyProductsCatagoery(this.testData.subCatagoery[1]);",
+              "err": {},
+              "uuid": "4939c2ef-aad6-43bc-b772-4ea009aa8803",
+              "parentUUID": "919addec-94cf-469d-bdb3-b6f1fd93c080",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "59006617-21d5-49c7-b0cb-b13b5c45673c",
+            "4939c2ef-aad6-43bc-b772-4ea009aa8803"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17426,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "'cypress/results'",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

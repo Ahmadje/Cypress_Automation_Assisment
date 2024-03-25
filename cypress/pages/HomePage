@@ -1,0 +1,9 @@
+class HomePage {
+
+    getLoginBtn() { return cy.get('[href="/login"]') }
+    getLogoutBtn(){return cy.get('[href="/logout"]')}
+    getMainCatagoeryBtn(){return cy.get('.panel-title > a[data-parent="#accordian"]')}
+    getSubCatagoeryBtn(){return cy.xpath('//div[@id="accordian"]//a[not(contains(@data-parent,"#accordian"))]')}
+}
+
+export default HomePage;

@@ -1,0 +1,8 @@
+{
+  "validEmail": "Test777@gmail.com",
+  "wrongEmail": "wrong@gmail.com",
+  "validPassword": "P@ssw0rd",
+  "wrongPassword": "wrong",
+  "mainCatagoery":["Women","Men"],
+  "subCatagoery": ["Dress", "Jeans"]
+}

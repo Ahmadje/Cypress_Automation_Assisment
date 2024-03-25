@@ -1,0 +1,6 @@
+class ProductPage {
+
+    getProductTitle() { return cy.get('.title') }
+}
+
+export default ProductPage;

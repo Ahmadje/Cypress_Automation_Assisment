@@ -1,0 +1,14 @@
+class LoginPage {
+
+    getEmailInput() { return cy.get('[data-qa="login-email"]') }
+    getPasswordInput() { return cy.get('[data-qa="login-password"]') }
+    getErrorMsg() { return cy.get('form[action="/login"] > p') }
+
+
+    loginWith(email,password){
+        this.getEmailInput().type(email);
+        this.getPasswordInput().type(password+'{enter}');
+    }
+}
+
+export default LoginPage;
